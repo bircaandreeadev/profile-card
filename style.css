@@ -1,0 +1,99 @@
+@font-face {
+        font-family: KumbhBold;
+        src: url('fonts/KumbhSans-Bold.ttf');
+        font-weight: 700;
+}
+@font-face {
+        font-family: KumbhLight;
+        src: url('fonts/KumbhSans-Light.ttf');
+        font-weight: 400;
+}
+@font-face {
+        font-family: KumbhRegular;
+        src: url('fonts/KumbhSans-Regular.ttf');
+}
+body {
+        font-size: 18px;
+        font-family: KumbhRegular;
+        background: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+        background-position: top -45vh left -5vh, bottom -55vh right -5vh;
+        background-repeat: no-repeat;
+        background-color: hsl(185, 75%, 39%);
+        height: 100vh;
+        width:  100vw;
+        overflow: hidden;
+}
+.attribution { 
+        font-size: 11px; text-align: center; 
+}
+.attribution a {
+        color: hsl(228, 45%, 44%); 
+}
+.card {
+        width: 370px;
+        height: 410px;
+        border-radius: 20px;
+        background-color: white;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-flow: column;
+}
+.card-header {
+        background: url(images/bg-pattern-card.svg);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        height: 38%;
+        position: relative;
+}
+.avatar {
+        border-radius: 50%;
+        border: 2px solid white;
+        width: 100px;
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+}
+.card-body {
+        margin-top: 70px;
+        text-align: center;
+        line-height: 1em;
+        padding-bottom: 15px;
+        border-bottom: 1px solid hsl(0, 0%, 59%)
+}
+.card-footer {
+        padding: 25px 30px 25px 30px;
+        display: flex;
+        text-align: center;
+}
+.stats {
+        line-height: 0;
+        width: 33.3%;
+}
+.text-bold {
+        font-family: KumbhBold;
+        color: hsl(229, 23%, 23%)
+}
+.text-light {
+        font-family: KumbhLight;
+        color:   hsl(227, 10%, 46%)
+}
+.text-s {
+        font-size: 12px;
+}
+.text-xs {
+        font-size: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+        .card {
+                width: 80%;
+        }
+
+        body {
+                background-position: top -67vh left -82vh, bottom -55vh right -90vh;
+        }
+}

@@ -1,22 +1,22 @@
 @font-face {
-        font-family: KumbhBold;
+        font-family: 'KumbhBold';
         src: url('fonts/KumbhSans-Bold.ttf');
         font-weight: 700;
 }
 @font-face {
-        font-family: KumbhLight;
+        font-family: 'KumbhLight';
         src: url('fonts/KumbhSans-Light.ttf');
         font-weight: 400;
 }
 @font-face {
-        font-family: KumbhRegular;
+        font-family: 'KumbhRegular';
         src: url('fonts/KumbhSans-Regular.ttf');
 }
 body {
         font-size: 18px;
-        font-family: KumbhRegular;
+        font-family: 'KumbhRegular';
         background: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
-        background-position: top -45vh left -5vh, bottom -55vh right -5vh;
+        background-position: top -50vh left -33vh, bottom -62vh right -25vh;
         background-repeat: no-repeat;
         background-color: hsl(185, 75%, 39%);
         height: 100vh;
@@ -30,8 +30,8 @@ body {
         color: hsl(228, 45%, 44%); 
 }
 .card {
-        width: 350px;
-        height: 380px;
+        width: 345px;
+        height: 375px;
         border-radius: 20px;
         background-color: white;
         position: fixed;
@@ -45,7 +45,7 @@ body {
         background: url(images/bg-pattern-card.svg);
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
-        height: 38%;
+        height: 50%;
         position: relative;
 }
 .avatar {
@@ -58,14 +58,14 @@ body {
         transform: translate(-50%, 0%);
 }
 .card-body {
-        margin-top: 50px;
+        margin-top: 56px;
         text-align: center;
-        line-height: 1em;
-        padding-bottom: 15px;
-        border-bottom: 1px solid hsl(0, 0%, 59%)
+        line-height: 0.7em;
+        border-bottom: 1px solid hsl(0, 0%, 59%);
+        height: 35%;
 }
 .card-footer {
-        padding: 25px 30px 25px 30px;
+        padding: 20px 30px 20px 30px;
         display: flex;
         text-align: center;
 }
@@ -74,12 +74,14 @@ body {
         width: 33.3%;
 }
 .text-bold {
-        font-family: KumbhBold;
-        color: hsl(229, 23%, 23%)
+        font-family: 'KumbhBold';
+        color: hsl(229, 23%, 23%);
+        font-weight: 700;
 }
 .text-light {
-        font-family: KumbhLight;
-        color:   hsl(227, 10%, 46%)
+        font-family: 'KumbhLight';
+        color:  hsl(0, 0%, 59%);
+        font-weight: 400;
 }
 .text-s {
         font-size: 12px;

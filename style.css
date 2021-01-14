@@ -30,8 +30,8 @@ body {
         color: hsl(228, 45%, 44%); 
 }
 .card {
-        width: 370px;
-        height: 410px;
+        width: 350px;
+        height: 380px;
         border-radius: 20px;
         background-color: white;
         position: fixed;
